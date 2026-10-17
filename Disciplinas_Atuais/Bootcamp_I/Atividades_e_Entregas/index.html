@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bruno de Lima Marques — Study Hub</title>
+<meta name="description" content="Portfólio acadêmico de Bruno de Lima Marques, estudante de Ciência da Computação: back-end com Java, análise de dados e cibersegurança.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3f5f2;
+    --ink: #16202a;
+    --muted: #55616c;
+    --line: #cfd6d1;
+    --accent: #0b6e4f;
+    --mark: #f2c14e;
+    --code-bg: #e7ebe7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12181d;
+      --ink: #e8ece9;
+      --muted: #9aa6ae;
+      --line: #2b353c;
+      --accent: #4fc79c;
+      --mark: #f2c14e;
+      --code-bg: #1b242a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--mark); outline-offset: 3px; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.hero { padding: 5rem 0 3.5rem; border-bottom: 1px solid var(--line); }
+  .tag {
+    display: inline-block;
+    background: var(--mark);
+    color: #16202a;
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.15rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 1.25rem;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.6rem, 9vw, 4.6rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+  }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 34rem; margin: 0 0 1.75rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .btn.primary { background: var(--ink); color: var(--bg); }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  section { padding: 3rem 0; border-bottom: 1px solid var(--line); }
+  h2 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+  }
+  p { margin: 0 0 1rem; max-width: 40rem; }
+
+  .area { padding: 1.25rem 0; border-top: 1px solid var(--line); }
+  .area:first-of-type { border-top: 0; padding-top: 0; }
+  .area h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-size: 1.2rem; margin: 0 0 0.35rem; }
+  .area p { margin: 0; color: var(--muted); }
+
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; }
+  th, td { text-align: left; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: "Bricolage Grotesque", system-ui, sans-serif; background: var(--code-bg); }
+
+  pre {
+    background: var(--code-bg);
+    padding: 1.1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  ul.links { list-style: none; padding: 0; margin: 0; }
+  ul.links li { padding: 0.6rem 0; border-top: 1px solid var(--line); }
+  ul.links li:first-child { border-top: 0; }
+  ul.links span { display: block; color: var(--muted); font-size: 0.9rem; }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
+  @media (max-width: 480px) { header.hero { padding-top: 3rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="tag">Versão 1.0</span>
+    <h1>Bruno de Lima Marques</h1>
+    <p class="lead">Estudante de Ciência da Computação. Este é o meu Study Hub: o lugar onde organizo o que estudo e mostro o que construo.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/brunolmars/Meu_Study_Hub_TI">Ver o repositório</a>
+      <a class="btn" href="https://www.linkedin.com/in/bruno-marques-8564b0427/">LinkedIn</a>
+      <a class="btn" href="mailto:brunodelimamarques15@gmail.com">Enviar e-mail</a>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Minha trajetória em TI começou na curiosidade por tecnologia e por como os sistemas facilitam o dia a dia das pessoas. Também me interesso por entender o comportamento das pessoas e os padrões nas suas escolhas.</p>
+    <p>No curso de Ciência da Computação, conheci programação, banco de dados e desenvolvimento de sistemas. Gosto de transformar uma necessidade em uma solução e quero construir uma carreira em projetos que sejam úteis para as pessoas.</p>
+  </section>
+
+  <section id="areas">
+    <h2>O que me interessa</h2>
+    <div class="area">
+      <h3>Desenvolvimento back-end com Java</h3>
+      <p>Criação de APIs, regras de negócio e integração com bancos de dados.</p>
+    </div>
+    <div class="area">
+      <h3>Análise de dados</h3>
+      <p>Identificar padrões e transformar dados em informação para tomar decisões melhores.</p>
+    </div>
+    <div class="area">
+      <h3>Cibersegurança</h3>
+      <p>Investigação, lógica e proteção de sistemas e dados contra ameaças.</p>
+    </div>
+  </section>
+
+  <section id="disciplinas">
+    <h2>Disciplinas no Study Hub</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Módulo</th><th>Disciplina</th><th>Material</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1º</td><td>Bootcamp I</td><td>Planejamento do Study Hub e entregas do projeto</td></tr>
+          <tr><td>1º</td><td>Segurança Digital</td><td>Resumos, exercícios e pesquisas sobre segurança</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="estrutura">
+    <h2>Como o repositório está organizado</h2>
+    <pre>Meu_Study_Hub_TI/
+├── 01_Apresentacao_e_Perfil/
+├── 02_Disciplinas_Atuais/
+│   ├── Bootcamp_I/
+│   │   ├── Atividades_e_Entregas/
+│   │   └── Anotacoes_e_Resumos/
+│   └── Seguranca_Digital/
+├── 03_Projetos_e_Certificados/
+├── index.html
+└── README.md</pre>
+  </section>
+
+  <section id="links">
+    <h2>Links</h2>
+    <ul class="links">
+      <li><a href="https://github.com/brunolmars/Meu_Study_Hub_TI">Repositório no GitHub</a><span>Código, documentos e histórico de versões</span></li>
+      <li><a href="https://youtu.be/JsJ4oz-GKbs">Pitch do Study Hub no YouTube</a><span>Apresentação em vídeo da Fase 1</span></li>
+      <li><a href="https://www.linkedin.com/in/bruno-marques-8564b0427/">Perfil no LinkedIn</a><span>Trajetória e contato profissional</span></li>
+    </ul>
+  </section>
+
+  <footer>Bruno de Lima Marques · Ciência da Computação · Study Hub v1.0</footer>
+</div>
+</body>
+</html>
